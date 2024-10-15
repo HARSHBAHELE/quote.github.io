@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: cursive;
+    background-color: #D9CAB3;
+}
+  
+.testimonial-container {
+    width: 500px;
+    height: 220px;
+    background-color: #D8D2C2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    min-width: 400px;
+    padding: 70px 20px;
+    margin: 5px;
+    color: black;
+    position: relative;
+}
+  
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+}
+  
+.username {
+    font-size: 13px;
+    font-weight: 100;
+    padding-top: 20px;
+}
+.main1 {
+    display: none;
+}
+button {
+    margin-left: 200px;
+    margin-top: 30px;
+    height: 30px;
+    width: 100px;
+}  
+button:hover {
+    background-color: #E3C4A8;
+    border: 1px solid black;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Add padding to the body */
+    }
+    
+    .testimonial-container {
+        width: 90%; /* Make the container width responsive */
+        padding: 40px 15px; /* Adjust padding */
+        margin: 10px auto; /* Center the container */
+        height: auto; /* Allow height to adjust based on content */
+    }
+    
+    img {
+        width: 60px; /* Smaller image size for mobile */
+        height: 60px;
+        top: -30px; /* Adjust image position */
+    }
+    
+    .username {
+        font-size: 14px; /* Slightly larger text */
+    }
+    
+    button {
+         /* Center the button */
+        width: 30%; /* Full-width button for easier tapping */
+        height: 40px; /* Taller button for better usability */
+        margin-top: 20px; /* Adjust margin for better spacing */
+    }
+}
